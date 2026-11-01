@@ -16,4 +16,5 @@ ADTBS += \
 DTBS += \
 	$(LOCAL_DIR)/msm8974pro-sony-leo.dtb \
 	$(LOCAL_DIR)/msm8974pro-sony-aries.dtb \
+	$(LOCAL_DIR)/msm8974-nokia-bandit.dtb \
 
