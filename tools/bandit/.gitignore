@@ -1,0 +1,5 @@
+# The repository's build-* rule also matches the kit's source scripts.
+!project-kit/build-env/
+!project-kit/build-env/*
+!project-kit/kit/scripts/build-lk1st.sh
+!project-kit/kit/k1/build-k1.sh
