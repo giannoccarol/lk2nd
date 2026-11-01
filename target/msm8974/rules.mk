@@ -6,7 +6,11 @@ INCLUDES += -I$(LK_TOP_DIR)/lk2nd/include
 
 PLATFORM := msm8974
 
+ifeq ($(notdir $(LK2ND_BUNDLE_DTB)),msm8974-nokia-bandit.dtb)
+MEMBASE := 0x0FF00000 # Verified BootShim load address on Lumia 1520 RM-937
+else
 MEMBASE := 0x0F900000 # SDRAM
+endif
 MEMSIZE := 0x00100000 # 1MB
 
 BASE_ADDR        := 0x00000
